@@ -15,7 +15,8 @@ jobs:
           flutter-version: '3.35.0'
 
       - name: Create Flutter project files
-        run: |
+        run: |    
+          flutter create --platforms=android .
           mkdir -p lib
           cp main.dart lib/main.dart
           cat > pubspec.yaml <<'EOF'
