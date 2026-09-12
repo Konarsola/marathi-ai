@@ -15,8 +15,8 @@ jobs:
           flutter-version: '3.35.0'
 
       - name: Create Flutter project files
-        run: |    
-          flutter create --platforms=android .
+        run: 
+          flutter create --platforms=android --project-name marathi_ai .
           mkdir -p lib
           cp main.dart lib/main.dart
           cat > pubspec.yaml <<'EOF'
